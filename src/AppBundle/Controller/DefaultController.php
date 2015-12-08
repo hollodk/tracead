@@ -15,13 +15,12 @@ class DefaultController extends Controller
     {
         // replace this example code with whatever you need
         return $this->render('default/index.html.twig', array(
-            //'base_dir' => realpath($this->container->getParameter('kernel.root_dir').'/..'),
             'amount' => 100,
             'order_id' => 123,
             'currency' => 'DKK',
             'country' => 'Denmark',
-            'tax_amount' => 73,
-            'shipping_amount' => 14
+            'tax_amount' => 100,
+            'shipping_amount' => 100,
         ));
     }
 }
