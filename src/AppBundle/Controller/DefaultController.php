@@ -9,12 +9,32 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/", name="homepage")
+     * @Route("/checkout")
      */
-    public function indexAction(Request $request)
+    public function checkoutAction(Request $request)
     {
         // replace this example code with whatever you need
-        return $this->render('default/index.html.twig', array(
+        return $this->render('default/checkout.html.twig', array(
+        ));
+    }
+
+    /**
+     * @Route("/ok")
+     */
+    public function okAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/ok.html.twig', array(
+        ));
+    }
+
+    /**
+     * @Route("/global")
+     */
+    public function globalAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/global.html.twig', array(
             'amount' => 100,
             'order_id' => 123,
             'currency' => 'DKK',
