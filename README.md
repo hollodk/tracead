@@ -17,8 +17,10 @@ php ../composer.phar install
 chmod -R 777 app/cache app/logs
 
 # Navigate to this in browser
--> http://localhost/tracead/web/app_dev.php
+-> http://localhost/tracead/web/app_dev.php/checkout -> app/Resources/views/default/checkout.html.twig
+-> http://localhost/tracead/web/app_dev.php/ok -> app/Resources/views/default/ok.html.twig
+-> http://localhost/tracead/web/app_dev.php/global -> app/Resources/views/default/global.html.twig
 
-# Checkout following paths
+# Follow paths has custom code
 src/AppBundle/Controller
 app/Resources/views/
